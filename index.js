@@ -1168,13 +1168,6 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         cnf.groupRemove(from, sender);
       }
     }
-	  //auto voice note by xeon
-    for (let anju of vien){
-				if (budy === anju){
-					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					xeon.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
-					}
-			}
 	  
     if (isGroup && autojoin == true) {
       if (budy.includes("://chat.whatsapp.com/")) {
