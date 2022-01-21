@@ -1627,7 +1627,7 @@ ${anu.result.url_video}
           yta(mulaikah).then((res) => {
             const { dl_link, thumb, title, filesizeF, filesize } = res;
             axios
-              .get(`https://api.lolhuman.xyz/api/ytplay?q=${play}apikey=${zeksapi}{dl_link}`)
+              .get(`https://api.zeks.xyz/api/ytplaymp3?q=${playi}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
               .then(async (a) => {
                 if (Number(filesize) >= 9999999)
                   return sendMediaURL(
