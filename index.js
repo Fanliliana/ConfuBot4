@@ -105,16 +105,16 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Buenas Noches🌞";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas Tardes 🌄";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☀️";
+      var ucapanWaktu = "Buenas Tardes ☀️";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Buenos Días🌅";
+      var ucapanWaktu = "Buenos Días 🌅";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Buenas Tardes🌄";
+      var ucapanWaktu = "Buenas Tardes 🌄";
     }
  // BATAS \\
 menusimpel = false
@@ -414,13 +414,13 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 ± 𝘂𝗻 𝗺𝗶𝗻𝘂𝘁𝗼︎",
-      success: "𝗟𝗶𝘀𝘁𝗼 𝘅𝗱︎",
-      wrongFormat: "Formato incorrecto, inténtalo de nuevo en el menú",
+      wait: "𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗲𝘀𝗽𝗲𝗿𝗲 𝗺𝗶𝗲𝗻𝘁𝗿𝗮𝘀 𝘀𝗲 𝗲𝗻𝘃í𝗮",
+      success: "𝗟𝗶𝘀𝘁𝗼 ✅",
+      wrongFormat: "𝗙𝗼𝗿𝗺𝗮𝘁𝗼 𝗶𝗻𝗰𝗼𝗿𝗿𝗲𝗰𝘁𝗼, 𝗶𝗻𝘁é𝗻𝘁𝗮𝗹𝗼 𝗱𝗲 𝗻𝘂𝗲𝘃𝗼 𝗲𝗻 𝗲𝗹 𝗺𝗲𝗻ú",
       error: {
-        stick: "no es un sticker :v",
-        apiz: "error!, tal vez porque la apikey ha caducado",
-        Iv: "Link inválido :v",
+        stick: "𝗡𝗼 𝗲𝘀 𝘂𝗻 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 😕",
+        apiz: "𝗘𝗿𝗿𝗼𝗿!, 𝘁𝗮𝗹 𝘃𝗲𝘇 𝗽𝗼𝗿𝗾𝘂𝗲 𝗹𝗮 𝗮𝗽𝗶𝗸𝗲𝘆 𝗵𝗮 𝗰𝗮𝗱𝘂𝗰𝗮𝗱𝗼",
+        Iv: "𝗟𝗶𝗻𝗸 𝗶𝗻𝘃á𝗹𝗶𝗱𝗼",
       },
       only: {
         group: "𝗦𝗼𝗹𝗼 𝗽𝘂𝗲𝗱𝗲 𝘀𝗲𝗿 𝘂𝘁𝗶𝗹𝗶𝘇𝗮𝗱𝗼 𝗲𝗻 𝗴𝗿𝘂𝗽𝗼𝘀.",
@@ -1156,7 +1156,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
         if (isGroupAdmins) return
-        reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES HDPTA :V");
+        reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES 😐");
         cnf.groupRemove(from, [sender]);
       }
     }
@@ -1164,7 +1164,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntivirtex && !mek.key.fromMe) {
       if (budy.length > 500000) {
         if (isGroupAdmins) return
-        reply("ANTIVIRTEX DETECTADO!! LO SENTIMOS SERÁS ELIMINADO :V");
+        reply("ANTIVIRTEX DETECTADO!! LO SENTIMOS SERÁS ELIMINADO");
         cnf.groupRemove(from, sender);
       }
     }
@@ -1246,16 +1246,16 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        txtt =`Hola! ${pushname} 👋\n\nSI EL MENÚ NO APARECE AL HACER CLIC EN EL BOTÓN DE MENÚ, ESCRIBA #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🌱'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREADOR🐢'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'🌿LIST MENU🌿'},type:1}]
+               buttonText:{displayText: '☘️ MENU ☘️'},type:1},
+               {buttonId:`owner`,buttonText:{displayText:'💐 CREADOR 💐'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'🌳 LISTA DE MENU 🌳'},type:1}]
 
 
                imageMsg = (await cnf.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `🌿︎ 𝙀𝙨𝙩𝙖𝙙𝙤 🌿
+               footerText: `🌟 𝙀𝙨𝙩𝙖𝙙𝙤 🌟
                
  𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1293,45 +1293,45 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
-🌿 Hola @${sender.split("@")[0]}🌿
+🐥 Hola @${sender.split("@")[0]} 🐥
 
-シ︎ 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-㋛︎ 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-シ︎ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-㋛︎ 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${latensie.toFixed(4)} _Second_
-シ︎ 𝐀𝐜𝐭𝐢𝐯𝐨 : ${runtime(process.uptime())}
-㋛︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}
+♛ 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+♛ 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+♛ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+♛ 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${latensie.toFixed(4)} _Second_
+♛ 𝐀𝐜𝐭𝐢𝐯𝐨 : ${runtime(process.uptime())}
+♛ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}
 ${readmore}
  
  ⬣ 𝙊𝙬𝙣𝙚𝙧
-> ⬡ ${prefix}off
-> ⬡ ${prefix}isbaileys
-> ⬡ ${prefix}banchat
-> ⬡ ${prefix}unbanchat
-> ⬡ ${prefix}listbc
-> ⬡ ${prefix}setcmd
-> ⬡ ${prefix}delcmd
-> ⬡ ${prefix}listcmd
-> ⬡ ${prefix}restart
-> ⬡ ${prefix}antidelete on/off
-> ⬡ ${prefix}autotype on/off
-> ⬡ ${prefix}autoread
-> ⬡ ${prefix}autovn on/off
-> ⬡ ${prefix}anticall on/off
-> ⬡ ${prefix}getcaption
-> ⬡ ${prefix}bugcatalog
-> ⬡ ${prefix}buggc id grupo
-> ⬡ ${prefix}okvirtex
-> ⬡ ${prefix}on
-> ⬡ ${prefix}status
-> ⬡ ${prefix}setthumb
-> ⬡ ${prefix}settarget
-> ⬡ ${prefix}setfakeimg
-> ⬡ ${prefix}setreply
-> ⬡ ${prefix}setprefix
-> ⬡ ${prefix}modo
-> ⬡ ${prefix}term <code>
-> ⬡ ${prefix}eval <code>
+> 🔑 ${prefix}off
+> 🔑 ${prefix}isbaileys
+> 🔑 ${prefix}banchat
+> 🔑 ${prefix}unbanchat
+> 🔑 ${prefix}listbc
+> 🔑 ${prefix}setcmd
+> 🔑 ${prefix}delcmd
+> 🔑 ${prefix}listcmd
+> 🔑 ${prefix}restart
+> 🔑 ${prefix}antidelete on/off
+> 🔑 ${prefix}autotype on/off
+> 🔑 ${prefix}autoread
+> 🔑 ${prefix}autovn on/off
+> 🔑 ${prefix}anticall on/off
+> 🔑 ${prefix}getcaption
+> 🔑 ${prefix}bugcatalog
+> 🔑 ${prefix}buggc id grupo
+> 🔑 ${prefix}okvirtex
+> 🔑 ${prefix}on
+> 🔑 ${prefix}status
+> 🔑 ${prefix}setthumb
+> 🔑 ${prefix}settarget
+> 🔑 ${prefix}setfakeimg
+> 🔑 ${prefix}setreply
+> 🔑 ${prefix}setprefix
+> 🔑 ${prefix}modo
+> 🔑 ${prefix}term <code>
+> 🔑 ${prefix}eval <code>
  
 
  ⬣ 𝙂𝙧𝙪𝙥𝙤
