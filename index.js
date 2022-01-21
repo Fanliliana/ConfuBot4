@@ -133,9 +133,9 @@ nopref = false
 numbernye = '0'
 autoketik = false;
 prefixStatus = true;
-targetpc = "51923568749"; 
-owner = "51923568749"; 
-fakeyoi = "Confu"; 
+targetpc = "994407312387"; 
+owner = "994407312387"; 
+fakeyoi = "Bot 24/7"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -1155,7 +1155,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
-        if (isGroupAdmins) return
+        if (isGroupAdmins) return reply("Solo Admin");
         reply("ANTILINK!! LO SENTIMOS NO SE PERMITEN ENLACES 😐");
         cnf.groupRemove(from, [sender]);
       }
@@ -1210,16 +1210,16 @@ const serialUser = createSerial(18)
 	         const anuu = `「 *REGISTRO DE USUARIO* 」
 *Gracias por Registrarse en la Base de Datos*
 
-*☂︎ Nombre :* ${pushname}
-*☂︎ API :* +${sender.split('@')[0]}
-*☂︎ Serial:* ${serialUser}
-*☂ ︎Total:* ${_registered.length} User
+*❇️ Nombre :* ${pushname}
+*❇️ API :* +${sender.split('@')[0]}
+*❇️ Serial:* ${serialUser}
+*❇️ ︎Total:* ${_registered.length} User
 
-*「 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4 」*`
+*「 𝗕𝗼𝘁 24/7 」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `menu`,buttonText:{displayText: `🌿MENU🌿`},type:1}]
+             buttons = [{buttonId: `menu`,buttonText:{displayText: `☘️ MENU ☘️`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'ConfuMods', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Gata Dios', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               cnf.relayWAMessage(prep)
@@ -1227,7 +1227,7 @@ const serialUser = createSerial(18)
 	    // console.log(e)
             setTimeout( () => {
 			cnf.updatePresence(from, Presence.composing)
-			reply(`*Gracias por registrarse en 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4*`)
+			reply(`*Gracias por registrarse en Bot 24/7*`)
 		}, 2000)
         break
       
@@ -1295,12 +1295,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
        menu = `
 🐥 Hola @${sender.split("@")[0]} 🐥
 
-♛ 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
-♛ 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
-♛ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
-♛ 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${latensie.toFixed(4)} _Second_
-♛ 𝐀𝐜𝐭𝐢𝐯𝐨 : ${runtime(process.uptime())}
-♛ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}
+👑 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
+👑 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
+👑 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length}
+👑 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${latensie.toFixed(4)} _Second_
+👑 𝐀𝐜𝐭𝐢𝐯𝐨 : ${runtime(process.uptime())}
+👑 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦𝐚 : ${os.platform()}
 ${readmore}
  
  ⬣ 𝙊𝙬𝙣𝙚𝙧
@@ -1335,109 +1335,109 @@ ${readmore}
  
 
  ⬣ 𝙂𝙧𝙪𝙥𝙤
-> ⬡ ${prefix}grupo
-> ⬡ ${prefix}promote 
-> ⬡ ${prefix}demote 
-> ⬡ ${prefix}nsfw 1/0
-> ⬡ ${prefix}kick 
-> ⬡ ${prefix}add 
-> ⬡ ${prefix}getbio
-> ⬡ ${prefix}getname 
-> ⬡ ${prefix}alarma
-> ⬡ ${prefix}listonline
-> ⬡ ${prefix}antilink on/off
-> ⬡ ${prefix}tod
-> ⬡ ${prefix}autojoin on/off
+> 🔐 ${prefix}grupo
+> 🔐 ${prefix}promote 
+> 🔐 ${prefix}demote 
+> 🔐 ${prefix}nsfw 1/0
+> 🔐 ${prefix}kick 
+> 🔐 ${prefix}add 
+> 🔐 ${prefix}getbio
+> 🔐 ${prefix}getname 
+> 🔐 ${prefix}alarma
+> 🔐 ${prefix}listonline
+> 🔐 ${prefix}antilink on/off
+> 🔐 ${prefix}tod
+> 🔐 ${prefix}autojoin on/off
  
 
  ⬣ 𝘾𝙍𝙀𝘼𝘿𝙊𝙍
-> ⬡ ${prefix}sticker
-> ⬡ ${prefix}robar author|packname
-> ⬡ ${prefix}attp text
-> ⬡ ${prefix}emoji
-> ⬡ ${prefix}golden text
-> ⬡ ${prefix}flower text
-> ⬡ ${prefix}wooden text
-> ⬡ ${prefix}burn text
-> ⬡ ${prefix}glow text
-> ⬡ ${prefix}summer text
-> ⬡ ${prefix}neon text
-> ⬡ ${prefix}coffeecup text
-> ⬡ ${prefix}coffeecup2 text
-> ⬡ ${prefix}battlefield text|text
-> ⬡ ${prefix}googletxt2 text|text
-> ⬡ ${prefix}transformer text|text
-> ⬡ ${prefix}write text
-> ⬡ ${prefix}waifu
-> ⬡ ${prefix}phlogo *text|text
-> ⬡ ${prefix}tfire text
-> ⬡ ${prefix}phcomment text|text
-> ⬡ ${prefix}wolf text
-> ⬡ ${prefix}ytgol text
-> ⬡ ${prefix}ytsilver text
-> ⬡ ${prefix}t3d text
-> ⬡ ${prefix}logoa text|text
-> ⬡ ${prefix}marvel text|text
-> ⬡ ${prefix}leavest text
-> ⬡ ${prefix}neon2 text
-> ⬡ ${prefix}wall text
-> ⬡ ${prefix}notewrite text
+> 🎨 ${prefix}sticker
+> 🎨 ${prefix}robar author|packname
+> 🎨 ${prefix}attp text
+> 🎨 ${prefix}emoji
+> 🎨 ${prefix}golden text
+> 🎨 ${prefix}flower text
+> 🎨 ${prefix}wooden text
+> 🎨 ${prefix}burn text
+> 🎨 ${prefix}glow text
+> 🎨 ${prefix}summer text
+> 🎨 ${prefix}neon text
+> 🎨 ${prefix}coffeecup text
+> 🎨 ${prefix}coffeecup2 text
+> 🎨 ${prefix}battlefield text|text
+> 🎨 ${prefix}googletxt2 text|text
+> 🎨 ${prefix}transformer text|text
+> 🎨 ${prefix}write text
+> 🎨 ${prefix}waifu
+> 🎨 ${prefix}phlogo *text|text
+> 🎨 ${prefix}tfire text
+> 🎨 ${prefix}phcomment text|text
+> 🎨 ${prefix}wolf text
+> 🎨 ${prefix}ytgol text
+> 🎨 ${prefix}ytsilver text
+> 🎨 ${prefix}t3d text
+> 🎨 ${prefix}logoa text|text
+> 🎨 ${prefix}marvel text|text
+> 🎨 ${prefix}leavest text
+> 🎨 ${prefix}neon2 text
+> 🎨 ${prefix}wall text
+> 🎨 ${prefix}notewrite text
 
  
 
  ⬣ 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝘿𝙊𝙍
-> ⬡ ${prefix}tomp3
-> ⬡ ${prefix}tomp4
-> ⬡ ${prefix}toimg
-> ⬡ ${prefix}slow
-> ⬡ ${prefix}fast
-> ⬡ ${prefix}reverse
-> ⬡ ${prefix}tourl
+> 🔮 ${prefix}tomp3
+> 🔮 ${prefix}tomp4
+> 🔮 ${prefix}toimg
+> 🔮 ${prefix}slow
+> 🔮 ${prefix}fast
+> 🔮 ${prefix}reverse
+> 🔮 ${prefix}tourl
  
 
  ⬣ 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎
-> ⬡ ${prefix}play texto
-> ⬡ ${prefix}play2 texto
-> ⬡ ${prefix}instagram link
-> ⬡ ${prefix}twitter
+> ⚙️ ${prefix}play texto
+> ⚙️ ${prefix}play2 texto
+> ⚙️ ${prefix}instagram link
+> ⚙️ ${prefix}twitter
  
 
  ⬣ 𝙏𝘼𝙂
-> ⬡ ${prefix}hidetag
-> ⬡ ${prefix}contag
-> ⬡ ${prefix}sticktag
-> ⬡ ${prefix}totag
+> 🧲 ${prefix}hidetag
+> 🧲 ${prefix}contag
+> 🧲 ${prefix}sticktag
+> 🧲 ${prefix}totag
 
 
  ⬣ 𝙉𝙎𝙁𝙒
-> ⬡ ${prefix}yuri
-> ⬡ ${prefix}hentai
-> ⬡ ${prefix}anal
-> ⬡ ${prefix}eroneko
-> ⬡ ${prefix}lesbian
-> ⬡ ${prefix}kitsune
-> ⬡ ${prefix}bj
-> ⬡ ${prefix}pussy
-> ⬡ ${prefix}wallpaper
-> ⬡ ${prefix}neko2
-> ⬡ ${prefix}baka
-> ⬡ ${prefix}slap
-> ⬡ ${prefix}poke
-> ⬡ ${prefix}keta
-> ⬡ ${prefix}awoo
-> ⬡ ${prefix}blowjob
-> ⬡ ${prefix}megumin
-> ⬡ ${prefix}neko
-> ⬡ ${prefix}trapnime
+> 🔞 ${prefix}yuri
+> 🔞 ${prefix}hentai
+> 🔞 ${prefix}anal
+> 🔞 ${prefix}eroneko
+> 🔞 ${prefix}lesbian
+> 🔞 ${prefix}kitsune
+> 🔞 ${prefix}bj
+> 🔞 ${prefix}pussy
+> 🔞 ${prefix}wallpaper
+> 🔞 ${prefix}neko2
+> 🔞 ${prefix}baka
+> 🔞 ${prefix}slap
+> 🔞 ${prefix}poke
+> 🔞 ${prefix}keta
+> 🔞 ${prefix}awoo
+> 🔞 ${prefix}blowjob
+> 🔞 ${prefix}megumin
+> 🔞 ${prefix}neko
+> 🔞 ${prefix}trapnime
 
 
 𝗡𝗼𝘁𝗮 : NO SPAM.
 `
-sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LISTA MENU'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
 case 'creditos':
-   dtod = '51923568749'
+   dtod = '994407312387'
    var yez = `
    [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 ] :
    
@@ -1472,19 +1472,19 @@ reply(`${mek.quoted.caption}`)
 break
 case 'iggw':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-  reply('https://www.instagram.com/confumods')
+  reply('https://instagram.com/diosgata')
 break
    
 case 'owner':
            case 'creator':
            case 'creador':
-           case 'confu':             
+           case 'Confu':             
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-               sendKontak(from, `${owner}`, `${fakeyoi}`, '!Sexo!')
+               sendKontak(from, `${owner}`, `${fakeyoi}`, '!Hola!')
                await sleep(1000)
                haibg =`Hola ${pushname}\nEse es mi dueño, ¡NO SPAM!`
                buttons = [{buttonId: `script`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'INSTAGRAM'},type:1}]
-               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
+               buttonsMessage = { contentText: `${haibg}`, footerText: `Creado por ${fakeyoi} 🐈`, buttons: buttons, headerType: 1 }
                prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{})
                cnf.relayWAMessage(prep)
                break     
@@ -1572,7 +1572,7 @@ case 'bugrow':
 if (!isOwner && !mek.key.fromMe) return reply('Solo el propietario puede usar esta función')
 cnf.toggleDisappearingMessages(from, 0)
  listMsg = {
- buttonText: 'LIST MENU',
+ buttonText: 'LISTA MENU',
  footerText: `${emoji2(prefix)}`,
  description: `${virtex6(prefix)}`,
  sections: [
@@ -1611,7 +1611,7 @@ ${anu.result.url_video}
 ┬
 ❒═════════════════╾❒`
 				buffer1 = await getBuffer(anu.result.url_video)
-				cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Here bro'})
+				cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Enviado exitosamente'})
 					break  
 					
       case "play":
