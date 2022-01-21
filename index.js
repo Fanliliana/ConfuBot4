@@ -3162,7 +3162,7 @@ case 'lesbian':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-kau = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=lesbian&apikey=${hardi}`)
+kau = await getBuffer(`https://hardianto.xyz/api/anime/random?nsfw=lesbian&apikey=${hardi}`)
 buttons = [{buttonId: `lesbian`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(kau, "imageMessage", { thumbnail: kau, })).imageMessage
               buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
@@ -3174,7 +3174,7 @@ case 'eroneko':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=eroNeko&apikey=${hardi}`)
+hai = await getBuffer(`https://hardianto.xyz/api/anime/random?nsfw=eroNeko&apikey=${hardi}`)
 buttons = [{buttonId: `eroneko`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
               buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
@@ -3186,7 +3186,7 @@ case 'bj':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-yoiz = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=bJ&apikey=${hardi}`)
+yoiz = await getBuffer(`https://hardianto.xyz/api/anime/random?nsfw=bJ&apikey=${hardi}`)
 buttons = [{buttonId: `bj`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(yoiz, "imageMessage", { thumbnail: yoiz, })).imageMessage
               buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
@@ -3198,7 +3198,7 @@ case 'kitsune':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=kitsune&apikey=${hardi}`)
+hai = await getBuffer(`https://hardianto.xyz/api/anime/random?nsfw=kitsune&apikey=${hardi}`)
 buttons = [{buttonId: `kitsune`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
               buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
