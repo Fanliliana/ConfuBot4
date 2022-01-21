@@ -1765,12 +1765,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
- buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: '𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4',
+ buttonText: '𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗠𝗘𝗡𝗨',
+ footerText: 'Bot 24/7',
  description: `Hola @${sender.split('@')[0]}, Seleccione el menú aquí`,
  sections: [
                      {
-                      "title": `ConfuBot4`,
+                      "title": `Bot 24/7`,
  rows: [
                            {
                               "title": "Speed",
@@ -1809,7 +1809,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                               "rowId": ""
                            },
                            {
-                              "title": "DownloadMenu",
+                              "title": "DescargaMenu",
                               "rowId": "d"
                            },
                         ]
@@ -1818,7 +1818,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 }
 cnf.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
-case 'downloadmenu':
+case 'descargamenu':
 menu = `🌿𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴🌿
 🌿${prefix}play texto
 
@@ -1828,7 +1828,7 @@ menu = `🌿𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴🌿
 
 🌿${prefix}twitter <link>
 `
-sendButMessage(from, menu, `𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, `Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
