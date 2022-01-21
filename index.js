@@ -3310,7 +3310,7 @@ case  'hentai':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-anu = await fetchJson(`https://api-alc.herokuapp.com/api/nsfw/yaoi?text=${c}&apikey=${hardi}`)
+anu = await fetchJson(`https://api-alc.herokuapp.com/api/nsfw/yaoi?&apikey=ConfuMods${c}&apikey=${hardi}`)
 buffer = await getBuffer(anu.url)
 cnf.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
