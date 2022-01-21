@@ -1878,6 +1878,7 @@ sendButMessage(from, menu, ` Gata Dios`, [
 break
 case 'ownermenu':
 menu = `💎 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶* 💎
+
 🔑${prefix}off
 
 🔑${prefix}isbaileys
@@ -1991,6 +1992,7 @@ sendButMessage(from, menu, ` Gata Dios`, [
 break
 case 'makermenu':
 menu = `💎 *Creador Menu* 💎
+
 🎨${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
 🎨${prefix}𝙧𝙤𝙗𝙖𝙧 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
