@@ -1820,13 +1820,14 @@ cnf.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentione
 break
 case 'downloadmenu':
 menu = `💎 *𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴* 💎
-⚙️ ${prefix}play texto
 
-⚙️ ${prefix}play2 texto
+⚙️${prefix}play texto
 
-⚙️ ${prefix}instagram <link>
+⚙️${prefix}play2 texto
 
-⚙️ ${prefix}twitter <link>
+⚙️${prefix}instagram <link>
+
+⚙️${prefix}twitter <link>
 `
 sendButMessage(from, menu, `Gata Dios`, [
           {
@@ -1838,197 +1839,199 @@ sendButMessage(from, menu, `Gata Dios`, [
           },]);
 break
 case 'groupmenu':
-menu = `🌿𝘎𝘳𝘶𝘱𝘰 𝘔𝘦𝘯𝘶︎🌿
-🌿${prefix}grupo
+menu = `💎 *𝘎𝘳𝘶𝘱𝘰 𝘔𝘦𝘯𝘶︎* 💎
 
-🌿${prefix}promote @tag
+🔐${prefix}grupo
 
-🌿${prefix}demote @tagAdmin
+🔐${prefix}promote @tag
 
-🌿${prefix}nsfw 1/0
+🔐${prefix}demote @tagAdmin
 
-🌿${prefix}kick @tag
+🔐${prefix}nsfw 1/0
 
-🌿${prefix}add numero
+🔐${prefix}kick @tag
 
-🌿${prefix}getbio
+🔐${prefix}add numero
 
-🌿${prefix}getname
+🔐${prefix}getbio
 
-🌿${prefix}alarma
+🔐${prefix}getname
 
-🌿${prefix}listonline
+🔐${prefix}alarma
 
-🌿${prefix}antilink
+🔐${prefix}listonline
 
-🌿${prefix}tod 
+🔐${prefix}antilink
 
-🌿${prefix}autojoin
+🔐${prefix}tod 
+
+🔐${prefix}autojoin
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `⬡ VOLVER AL MENU `,
+              displayText: `↩️ VOLVER AL MENU `,
             },
             type: 1,
           },]);
 break
 case 'ownermenu':
-menu = `シ︎𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶シ︎
-🌿${prefix}off
+menu = `💎 *𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘔𝘦𝘯𝘶* 💎
+🔑${prefix}off
 
-🌿${prefix}isbaileys
+🔑${prefix}isbaileys
 
-🌿${prefix}banchat
+🔑${prefix}banchat
 
-🌿${prefix}unbanchat
+🔑${prefix}unbanchat
 
-🌿${prefix}listbc
+🔑${prefix}listbc
 
-🌿${prefix}antidelete on/off
+🔑${prefix}antidelete on/off
 
-🌿${prefix}autotype on/off
+🔑${prefix}autotype on/off
 
-🌿${prefix}autoread
+🔑${prefix}autoread
 
-🌿${prefix}autovn on/off
+🔑${prefix}autovn on/off
 
-🌿${prefix}anticall on/off
+🔑${prefix}anticall on/off
 
-🌿${prefix}getcaption
+🔑${prefix}getcaption
 
-🌿${prefix}bugcatalog
+🔑${prefix}bugcatalog
 
-🌿${prefix}on
+🔑${prefix}on
 
-🌿${prefix}status
+🔑${prefix}status
 
-🌿${prefix}setthumb
+🔑${prefix}setthumb
 
-🌿${prefix}settarget
+🔑${prefix}settarget
 
-🌿${prefix}setfakeimg
+🔑${prefix}setfakeimg
 
-🌿${prefix}setreply
+🔑${prefix}setreply
 
-🌿${prefix}setprefix
+🔑${prefix}setprefix
 
-🌿${prefix}modo
+🔑${prefix}modo
 
-🌿${prefix}term <code>
+🔑${prefix}term <code>
 
-🌿${prefix}eval <code>
+🔑${prefix}eval <code>
 `
-sendButMessage(from, menu, `𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, `Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `⬡ VOLVER AL MENU `,
+              displayText: `↩️ VOLVER AL MENU `,
             },
             type: 1,
           },]);
 break
 case 'othermenu':
-menu = `🌿𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰🌿
-🌿${prefix}ping
+menu = `💎 *𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰* 💎
 
-🌿${prefix}inspect
+🎯${prefix}ping
 
-🌿${prefix}join
+🎯${prefix}inspect
 
-🌿${prefix}quote
+🎯${prefix}join
 
-🌿${prefix}write text
+🎯${prefix}quote
 
-🌿${prefix}writeleft text
+🎯${prefix}write text
 
-🌿${prefix}folioleft text
+🎯${prefix}writeleft text
 
-🌿${prefix}folioright text
+🎯${prefix}folioleft text
 
-🌿${prefix}songlyrics <texto>
+🎯${prefix}folioright text
 
-🌿${prefix}loli 
+🎯${prefix}songlyrics <texto>
 
-🌿${prefix}debug
+🎯${prefix}loli 
 
-🌿${prefix}chat 598|texto
+🎯${prefix}debug
 
-🌿${prefix}get url
+🎯${prefix}chat 598|texto
 
-🌿${prefix}ytsearch <texto>
+🎯${prefix}get url
 
-🌿${prefix}play <texto>
+🎯${prefix}ytsearch <texto>
 
-🌿${prefix}video <texto>
+🎯${prefix}play <texto>
 
-🌿${prefix}igstory <nombre de usuario>
+🎯${prefix}video <texto>
 
-🌿${prefix}twitter <link>
+🎯${prefix}igstory <nombre de usuario>
 
-🌿${prefix}image <texto>
+🎯${prefix}twitter <link>
 
-🌿${prefix}anime <random>
+🎯${prefix}image <texto>
 
-🌿${prefix}pinterest <texto>
+🎯${prefix}anime <random>
 
-🌿${prefix}lyrics <texto>
+🎯${prefix}pinterest <texto>
 
-🌿${prefix}playstore <texto>
+🎯${prefix}lyrics <texto>
+
+🎯${prefix}playstore <texto>
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `⬡ VOLVER AL MENU `,
+              displayText: `↩️ VOLVER AL MENU `,
             },
             type: 1,
           },]);
 break
 case 'makermenu':
-menu = `🌿Creador Menu🌿
-🌿${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
+menu = `💎 *Creador Menu* 💎
+🎨${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
-🌿${prefix}𝙧𝙤𝙗𝙖𝙧 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
+🎨${prefix}𝙧𝙤𝙗𝙖𝙧 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
 
-🌿${prefix}attp text
+🎨${prefix}attp text
 
-🌿${prefix}emoji
+🎨${prefix}emoji
 
-🌿${prefix}golden text
+🎨${prefix}golden text
 
-🌿${prefix}flower text
+🎨${prefix}flower text
 
-🌿${prefix}wooden text
+🎨${prefix}wooden text
 
-🌿${prefix}burn text
+🎨${prefix}burn text
 
-🌿${prefix}glow text
+🎨${prefix}glow text
 
-🌿${prefix}summer text
+🎨${prefix}summer text
 
-🌿${prefix}neon text
+🎨${prefix}neon text
 
-🌿${prefix}coffeecup2 text
+🎨${prefix}coffeecup2 text
 
-🌿${prefix}coffeecup text
+🎨${prefix}coffeecup text
 
-🌿${prefix}battlefield text|text
+🎨${prefix}battlefield text|text
 
-🌿${prefix}googletxt2 text|text
+🎨${prefix}googletxt2 text|text
 
-🌿${prefix}transformer text|text
+🎨${prefix}transformer text|text
 
-🌿${prefix}write text
+🎨${prefix}write text
 
-🌿${prefix}waifu
+🎨${prefix}waifu
 `
-sendButMessage(from, menu, ` 𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4`, [
+sendButMessage(from, menu, ` Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `⬡ VOLVER AL MENU `,
+              displayText: `↩️ VOLVER AL MENU `,
             },
             type: 1,
           },]);
