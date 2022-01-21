@@ -1809,7 +1809,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                               "rowId": ""
                            },
                            {
-                              "title": "DescargaMenu",
+                              "title": "DownloadMenu",
                               "rowId": "d"
                            },
                         ]
@@ -1818,21 +1818,21 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 }
 cnf.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
-case 'descargamenu':
-menu = `🌿𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴🌿
-🌿${prefix}play texto
+case 'downloadmenu':
+menu = `💎 *𝘔𝘦𝘯𝘶 𝘥𝘦 𝘋𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴* 💎
+⚙️ ${prefix}play texto
 
-🌿${prefix}play2 texto
+⚙️ ${prefix}play2 texto
 
-🌿${prefix}instagram <link>
+⚙️ ${prefix}instagram <link>
 
-🌿${prefix}twitter <link>
+⚙️ ${prefix}twitter <link>
 `
 sendButMessage(from, menu, `Gata Dios`, [
           {
             buttonId: `command`,
             buttonText: {
-              displayText: `⬡ VOLVER AL MENU ︎`,
+              displayText: `↩️ VOLVER AL MENU ︎`,
             },
             type: 1,
           },]);
