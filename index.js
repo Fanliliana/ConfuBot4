@@ -135,7 +135,7 @@ autoketik = false;
 prefixStatus = true;
 targetpc = "994407312387"; 
 owner = "994407312387"; 
-fakeyoi = "Bot 24/7"; 
+fakeyoi = "Gata Dios"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -1284,8 +1284,8 @@ groups = cnf.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-        ptod = "51923568749@s.whatsapp.net"
-        dtod = '51923568749'
+        ptod = "994407312387@s.whatsapp.net"
+        dtod = '994407312387'
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
@@ -1293,7 +1293,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
-🐥 Hola @${sender.split("@")[0]} 🐥
+🐈 Hola @${sender.split("@")[0]} 🐈
 
 👑 𝐆𝐫𝐮𝐩𝐨 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
 👑 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
