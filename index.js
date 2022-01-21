@@ -3138,7 +3138,7 @@ case 'yuri':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
 reply(mess.wait)
-kon = await getBuffer(`https://api-alc.herokuapp.com/api/nsfw/yaoi?&apikey=${hardi}`)
+kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/nsfw/yaoi?&apikey=${hardi}`)
 buttons = [{buttonId: `yuri`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await cnf.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
               buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
