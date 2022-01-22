@@ -3373,6 +3373,11 @@ case 'xs':
 if (!c) return reply('Que buscas?')
 pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?url=${c}&apikey=${hardi}`) 
 reply(mess.wait)
+const response = await fetch(URL, {
+  headers: {
+    'User-Agent': 'ANYTHING_WILL_WORK_HERE'
+  }
+});
 pepex = pepex.result
 ini_txt = ""
 for (var x of pepex) {
