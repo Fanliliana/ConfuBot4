@@ -3375,10 +3375,11 @@ pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?url=${c}&apikey
 reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
-for (var x of pepex) {
-ini_txt += `Titulo : ${x.title}\n`
-ini_txt += `Info : ${x.info}\n`
-ini_txt += `Link : ${x.link}\n\n\n`
+for (var xnxx of pepex) {
+ini_txt += `Titulo : ${xnxx.title}\n`
+ini_txt += `Vistas : ${xnxx.views}\n`
+ini_txt += `Duracion : ${xnxx.duration}\n`
+ini_txt += `Enlace/link : ${xnxx.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
 └ ${prefix}xvideo [link xvid] = Video`
