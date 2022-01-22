@@ -2145,8 +2145,8 @@ msgFilter.isFiltered(from)
 ffffg = body.slice(5)
 if (args.length == 0) return reply( 'Converse comigo...😁 \n(evite usar acentos)')
 sami = await fetchJson(`https://api.lolhuman.xyz/api/simi?apikey=56c3f2f2254d87b84051ab78&text=${ffffg}&lang=es`)
-fala = `${sami.success}🐥`
-reply(fala)
+msgFilter = `${sami.success}🐥`
+reply(msgFilter)
 break
 		
          case 'tfire':  
