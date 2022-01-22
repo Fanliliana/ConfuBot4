@@ -3376,10 +3376,10 @@ reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
 for (var xnxx of pepex) {
-ini_txt += `Titulo : ${xnxx.title}\n`
-ini_txt += `Vistas : ${xnxx.views}\n`
-ini_txt += `Duracion : ${xnxx.duration}\n`
-ini_txt += `Enlace/link : ${xnxx.link}\n\n\n`
+ini_txt += `Titulo : ${title}\n`
+ini_txt += `Vistas : ${views}\n`
+ini_txt += `Duracion : ${duration}\n`
+ini_txt += `Enlace/link : ${link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
 └ ${prefix}xvideo [link xvid] = Video`
