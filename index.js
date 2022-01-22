@@ -1429,8 +1429,6 @@ ${readmore}
 > 🔞 ${prefix}megumin
 > 🔞 ${prefix}neko
 > 🔞 ${prefix}trapnime
-> 🔞 ${prefix}xsearch <texto>
-> 🔞 ${prefix}xvideo <link>
 
 
 𝗡𝗼𝘁𝗮 : NO SPAM.
@@ -3376,7 +3374,7 @@ reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
 for (var x of pepex) {
-ini_txt += `Titulo : ${x.title}\n`
+ini_txt += `Titulo : ${x.result.title}\n`
 ini_txt += `Link : ${x.link}\n`
 ini_txt += `Duracion : ${x.duration}\n`
 ini_txt += `Vistas : ${x.views}\n`
