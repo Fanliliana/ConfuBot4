@@ -1429,6 +1429,8 @@ ${readmore}
 > 🔞 ${prefix}megumin
 > 🔞 ${prefix}neko
 > 🔞 ${prefix}trapnime
+> 🔞 ${prefix}xsearch <texto>
+> 🔞 ${prefix}xvideo <link>
 
 
 𝗡𝗼𝘁𝗮 : NO SPAM.
@@ -1976,6 +1978,10 @@ menu = `💎 *𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰* 💎
 🎯${prefix}anime <random>
 
 🎯${prefix}pinterest <texto>
+
+🎯${prefix}xsearch <texto>
+
+🎯${prefix}xvideo <link>
 
 🎯${prefix}lyrics <texto>
 
@@ -3362,8 +3368,9 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
 cnf.sendMessage(from, kon, image, {quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
 break
+case 'xsearch':
 case 'xs':
-if (!c) return reply('¿Buscando qué?')
+if (!c) return reply('Que buscas?')
 pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?query=${c}&apikey=${HunterApi}`)
 reply(mess.wait)
 pepex = pepex.result
@@ -3374,16 +3381,16 @@ ini_txt += `Info : ${x.info}\n`
 ini_txt += `Link : ${x.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
-└ ${prefix}xvideo [link xvid]`
-cnf.sendMessage(from, anu, text, {quoted: mek})
+└ ${prefix}xvideo [link xvid] = Video`
+xeon.sendMessage(from, anu, text, {quoted: mek})
 break
 case 'xvideo':
-case 'xv': 
-if (!c) return reply('the link?')
+case 'xv':
+if (!c) return reply('Link?')
 x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`)
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
-cnf.sendMessage(from, vid, video, {quoted: mek})
+xeon.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'writelist':
   reply(`Ejemplos :
