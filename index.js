@@ -3382,7 +3382,7 @@ ini_txt += `Link : ${x.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
 └ ${prefix}xvideo [link xvid] = Video`
-xeon.sendMessage(from, anu, text, {quoted: mek})
+cnf.sendMessage(from, anu, text, {quoted: mek})
 break
 case 'xvideo':
 case 'xv':
