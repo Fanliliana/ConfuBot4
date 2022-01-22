@@ -1381,7 +1381,6 @@ ${readmore}
 > 🎨 ${prefix}leavest text
 > 🎨 ${prefix}neon2 text
 > 🎨 ${prefix}wall text
-> 🎨 ${prefix}simi texto
 > 🎨 ${prefix}notewrite text
 
  
@@ -1980,8 +1979,6 @@ menu = `💎 *𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰* 💎
 
 🎯${prefix}lyrics <texto>
 
-🎯${prefix}simi <texto>
-
 🎯${prefix}playstore <texto>
 `
 sendButMessage(from, menu, ` Gata Dios`, [
@@ -2139,21 +2136,6 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/wolflogo?apikey=${zeksApikey}&text1=zeeoneofc&text2=${F}`)
                    cnf.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
                    break
-		
-		case 'simi':
-msgFilter.isFiltered(from)
-let fetch = require('node-fetch')
-let handler = async (m, { text }) => {
-  let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(text), lc: "es" }, ''))
-  let json = await res.json()
-  if (json.success) m.reply(json.success)
-  else throw json
-}
-handler.register = false
-
-module.exports = handler
-break
-		
          case 'tfire':  
                    if (args.length < 1) return reply(`[  ×  ] Ejemplo :\n*${prefix}${command} Confu*`)
                    F = body.slice(7)
