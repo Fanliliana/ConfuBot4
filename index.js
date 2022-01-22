@@ -3371,15 +3371,14 @@ break
 case 'xsearch':
 case 'xs':
 if (!c) return reply('Que buscas?')
-pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?url=${c}&apikey=${hardi}`) 
+pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?url=${c}&apikey=${hardi}`) 
 reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
 for (var x of pepex) {
-ini_txt += `Titulo : ${x.name}\n`
-ini_txt += `Vistas : ${x.views}\n`
-ini_txt += `Duracion : ${x.duration}\n`
-ini_txt += `Enlace : ${x.link}\n\n\n`
+ini_txt += `Titulo : ${x.title}\n`
+ini_txt += `Info : ${x.info}\n`
+ini_txt += `Link : ${x.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
 └ ${prefix}xvideo [link xvid] = Video`
@@ -3388,7 +3387,7 @@ break
 case 'xvideo':
 case 'xv':
 if (!c) return reply('Link?')
-x = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?url=${c}&apikey=${hardi}`)
+x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${hardi}`) 
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
 cnf.sendMessage(from, vid, video, {quoted: mek})
