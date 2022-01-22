@@ -3391,7 +3391,7 @@ if (!c) return reply('Link?')
 x = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?url=${c}&apikey=${hardi}`)
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
-xeon.sendMessage(from, vid, video, {quoted: mek})
+cnf.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'writelist':
   reply(`Ejemplos :
