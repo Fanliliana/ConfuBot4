@@ -1977,10 +1977,6 @@ menu = `💎 *𝘔𝘦𝘯𝘶 𝘷𝘢𝘳𝘪𝘢𝘥𝘰* 💎
 
 🎯${prefix}pinterest <texto>
 
-🎯${prefix}xsearch <texto>
-
-🎯${prefix}xvideo <link>
-
 🎯${prefix}lyrics <texto>
 
 🎯${prefix}playstore <texto>
@@ -3374,7 +3370,7 @@ reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
 for (var x of pepex) {
-ini_txt += `Titulo : ${x.result.title}\n`
+ini_txt += `Titulo : ${x.title}\n`
 ini_txt += `Link : ${x.link}\n`
 ini_txt += `Duracion : ${x.duration}\n`
 ini_txt += `Vistas : ${x.views}\n`
