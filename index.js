@@ -3375,11 +3375,11 @@ pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?url=${c}&apikey
 reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
-for (var xnxx of pepex) {
-ini_txt += `Titulo : ${xnxx.title}\n`
-ini_txt += `Vistas : ${xnxx.views}\n`
-ini_txt += `Duracion : ${xnxx.duration}\n`
-ini_txt += `Enlace/link : ${xnxx.link}\n\n\n`
+for (var x of pepex) {
+ini_txt += `Titulo : ${x.title}\n`
+ini_txt += `Vistas : ${x.views}\n`
+ini_txt += `Duracion : ${x.duration}\n`
+ini_txt += `Enlace/link : ${x.link}\n\n\n`
 }
 anu = `${ini_txt}───────────────\n\n┌ ◪ *DESCARGA*
 └ ${prefix}xvideo [link xvid] = Video`
@@ -3388,7 +3388,7 @@ break
 case 'xvideo':
 case 'xv':
 if (!c) return reply('Link?')
-x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`) 
+x = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?url=${c}&apikey=${hardi}`)
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
 xeon.sendMessage(from, vid, video, {quoted: mek})
