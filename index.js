@@ -3371,7 +3371,7 @@ break
 case 'xsearch':
 case 'xs':
 if (!c) return reply('Que buscas?')
-pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?=${c}&apikey=${lolhuman}`) 
+pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?url=${c}&apikey=${hardi}`) 
 reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
