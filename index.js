@@ -3371,7 +3371,7 @@ break
 case 'xsearch':
 case 'xs':
 if (!c) return reply('Que buscas?')
-pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?query=${c}&apikey=${HunterApi}`)
+pepex = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?=${c}&apikey=${lolhuman}`) 
 reply(mess.wait)
 pepex = pepex.result
 ini_txt = ""
@@ -3387,7 +3387,7 @@ break
 case 'xvideo':
 case 'xv':
 if (!c) return reply('Link?')
-x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`)
+x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`) 
 reply(mess.wait)
 vid = await getBuffer(x.result.files.low)
 xeon.sendMessage(from, vid, video, {quoted: mek})
