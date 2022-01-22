@@ -2142,11 +2142,16 @@ break
 		
 		case 'simi':
 msgFilter.isFiltered(from)
-ffffg = body.slice(5)
-if (args.length == 0) return reply( 'Converse comigo...😁 \n(evite usar acentos)')
-sami = await fetchJson(`https://api.simsimi.net?text=${ffffg}&lang=pt`)
-fala = `${sami.success}🐥`
-reply(fala)
+let fetch = require('node-fetch')
+let handler = async (m, { text }) => {
+  let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(text), lc: "es" }, ''))
+  let json = await res.json()
+  if (json.success) m.reply(json.success)
+  else throw json
+}
+handler.register = false
+
+module.exports = handler
 break
 		
          case 'tfire':  
