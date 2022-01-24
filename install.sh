@@ -11,6 +11,5 @@ apt-get install tesseract
 apt-get install nmap
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 npm install
-npm satart
 
 echo "TERMINE LA INSTALACIÓN DE TODOS LOS PAQUETES REQUERIDOS, simplemente ejecute npm start"
