@@ -53,7 +53,7 @@
     "yt-search": "^2.7.6"
   },
   "scripts": {
-    "start": "node main",
+    "start": "node index.js",
     "test": "supervisor main"
   },
   "repository": {
